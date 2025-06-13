@@ -6,7 +6,7 @@
 /*   By: swied <swied@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 12:21:56 by swied             #+#    #+#             */
-/*   Updated: 2025/06/13 18:36:55 by swied            ###   ########.fr       */
+/*   Updated: 2025/06/13 19:20:16 by swied            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ int	get_map(char *infile, t_map *map, char *content)
 	content = fill_content(infile);
 	if (!content)
 		return (ft_printf("fill_content failed"), -1);
+	get_width_and_height(infile, &map->max_2d_crds->x, &map->max_2d_crds->y);
 	if (check_content(content) == -1)
 		return (free(content), ft_printf("Wrong type in infile"), -1);
 	if (check_same_width(content, map) == -1)
@@ -33,7 +34,6 @@ int	get_map(char *infile, t_map *map, char *content)
 	new_content = ft_split(yeeted, ' ');
 	if (!new_content)
 		return (free(content), free(yeeted), ft_printf("new_content failed\n"), -1);
-	get_width_and_height(infile, &map->max_2d_crds->x, &map->max_2d_crds->y);
 	if (get_dimensions(map, new_content) == -1)
 		return (-1);
 	return (0);

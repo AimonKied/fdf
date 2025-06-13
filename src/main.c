@@ -6,7 +6,7 @@
 /*   By: swied <swied@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 12:18:01 by swied             #+#    #+#             */
-/*   Updated: 2025/06/13 18:21:07 by swied            ###   ########.fr       */
+/*   Updated: 2025/06/13 19:56:39 by swied            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,6 @@ int	main(int argc, char **argv)
 	execute_move(&map);
 	
 	lines(&data, &map);
-	printf("\n test \n");
 
 	mlx_clear_window(data.mlx_connection, data.mlx_window);
 	mlx_put_image_to_window(data.mlx_connection, data.mlx_window, data.image, 0, 0);

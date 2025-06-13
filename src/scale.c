@@ -6,7 +6,7 @@
 /*   By: swied <swied@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/13 12:00:39 by swied             #+#    #+#             */
-/*   Updated: 2025/06/13 15:25:59 by swied            ###   ########.fr       */
+/*   Updated: 2025/06/13 19:54:23 by swied            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 void	get_scale_factor(t_map *map)
 {
+	printf("Full_Y: %f", map->min_max->full_y);
+	if (map->min_max->full_y == 0)
+		map->min_max->full_y = 1;
 	map->scale_factor = (WINDOW_HEIGHT * 0.5) / (map->min_max->full_y);
 	printf("Scale factor: %f\n", map->scale_factor);
 }

@@ -6,7 +6,7 @@
 /*   By: swied <swied@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 15:51:33 by swied             #+#    #+#             */
-/*   Updated: 2025/06/13 18:47:49 by swied            ###   ########.fr       */
+/*   Updated: 2025/06/13 19:57:37 by swied            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	rotate(t_map *map)
 		i++;
 	}
 	
-	rotate_y(map);
+	rotate_z(map);
 	printf("\nAfter Rotate_z:\n");
 	i = 0;
 	while (i < (map->max_2d_crds->x * map->max_2d_crds->y))

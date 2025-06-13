@@ -6,7 +6,7 @@
 /*   By: swied <swied@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/13 11:17:40 by swied             #+#    #+#             */
-/*   Updated: 2025/06/13 18:50:58 by swied            ###   ########.fr       */
+/*   Updated: 2025/06/13 19:51:37 by swied            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ int	find_min_max(t_map *map)
 	f_max_x(map);
 	f_min_y(map);
 	f_max_y(map);
+	printf("\nmin_x: %f min_y: %f max_x: %f max_y: %f\n", map->min_max->min_x, map->min_max->min_y, map->min_max->max_x, map->min_max->max_y);
 	map->min_max->full_x = map->min_max->max_x - map->min_max->min_x;
 	map->min_max->full_y = map->min_max->max_y - map->min_max->min_y;
 	return (0);
@@ -35,7 +36,9 @@ void	f_min_x(t_map *map)
 	while (i < (map->max_2d_crds->x * map->max_2d_crds->y))
 	{
 		if (map->arr_of_3d_crds[i].x < map->min_max->min_x)
+		{
 			map->min_max->min_x = map->arr_of_3d_crds[i].x;	
+		}
 		i++;
 	}
 }
