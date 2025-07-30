@@ -6,6 +6,24 @@
 
 The program reads `.fdf` files, which contain height values (Z-axis) for each point on a grid, and displays them as a connected wireframe model in a window.
 
+Example:
+
+`0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0`  
+`0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0`  
+`0  0 10 10  0  0 10 10  0  0  0 10 10 10 10 10  0  0  0`  
+`0  0 10 10  0  0 10 10  0  0  0  0  0  0  0 10 10  0  0`  
+`0  0 10 10  0  0 10 10  0  0  0  0  0  0  0 10 10  0  0`  
+`0  0 10 10 10 10 10 10  0  0  0  0 10 10 10 10  0  0  0`  
+`0  0  0 10 10 10 10 10  0  0  0 10 10  0  0  0  0  0  0`  
+`0  0  0  0  0  0 10 10  0  0  0 10 10  0  0  0  0  0  0`  
+`0  0  0  0  0  0 10 10  0  0  0 10 10 10 10 10 10  0  0`  
+`0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0`  
+`0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0`  
+
+ Output:
+
+ 
+
 ---
 
 ## 🔧 Installation and Execution
@@ -22,5 +40,3 @@ The program reads `.fdf` files, which contain height values (Z-axis) for each po
 ```bash
 make
 ./fdf <infile.fdf>
-
-<img width="1400" height="1330" alt="fdf_42" src="https://github.com/user-attachments/assets/8dfd8871-c711-4c2c-a289-1cf545287e77" />
