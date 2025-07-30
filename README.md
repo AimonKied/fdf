@@ -14,7 +14,7 @@ The program reads `.fdf` files, which contain height values (Z-axis) for each po
 
 - `gcc` compiler
 - `make`
-- MiniLibX (the on in the repo is for macOS)
+- MiniLibX (the one in the repo is for macOS)
 - A Unix-based system (macOS or Linux)
 
 ### Compilation
