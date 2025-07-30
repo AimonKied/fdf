@@ -22,3 +22,5 @@ The program reads `.fdf` files, which contain height values (Z-axis) for each po
 ```bash
 make
 ./fdf <infile.fdf>
+
+<img width="1400" height="1330" alt="fdf_42" src="https://github.com/user-attachments/assets/8dfd8871-c711-4c2c-a289-1cf545287e77" />
